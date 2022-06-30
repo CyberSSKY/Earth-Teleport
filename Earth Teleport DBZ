@@ -1,6 +1,3 @@
-
-
-
 local ScreenGui = Instance.new("ScreenGui")
 local QueueTeleport = Instance.new("TextButton")
 local NamekTeleport = Instance.new("TextButton")
@@ -12,14 +9,13 @@ local SpaceTeleport = Instance.new("TextButton")
 local OtherWorldTeleport = Instance.new("TextButton")
 local EarthTeleport = Instance.new("TextButton")
 
---Properties:
-
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 QueueTeleport.Name = "QueueTeleport"
 QueueTeleport.Parent = ScreenGui
 QueueTeleport.BackgroundColor3 = Color3.fromRGB(126, 135, 255)
+QueueTeleport.Position = UDim2.new(0.932081223, 0, 0.481540918, 0)
 QueueTeleport.Size = UDim2.new(0, 88, 0, 36)
 QueueTeleport.Font = Enum.Font.SourceSansSemibold
 QueueTeleport.Text = "Queue"
@@ -37,12 +33,13 @@ end)
 NamekTeleport.Name = "NamekTeleport"
 NamekTeleport.Parent = ScreenGui
 NamekTeleport.BackgroundColor3 = Color3.fromRGB(53, 255, 103)
+NamekTeleport.Position = UDim2.new(0.932081223, 0, 0.792937398, 0)
 NamekTeleport.Size = UDim2.new(0, 88, 0, 36)
 NamekTeleport.Font = Enum.Font.SourceSansSemibold
 NamekTeleport.Text = "Namek"
 NamekTeleport.TextColor3 = Color3.fromRGB(0, 0, 0)
 NamekTeleport.TextSize = 14.000
-NamekTeleportTeleport.MouseButton1Click:connect(function()
+NamekTeleport.MouseButton1Click:connect(function()
 game:GetService("TeleportService"):Teleport(882399924)
 game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Namek!";
@@ -53,6 +50,7 @@ end)
 SecretWorldTeleport.Name = "SecretWorldTeleport"
 SecretWorldTeleport.Parent = ScreenGui
 SecretWorldTeleport.BackgroundColor3 = Color3.fromRGB(255, 7, 44)
+SecretWorldTeleport.Position = UDim2.new(0.932081223, 0, 0.174959868, 0)
 SecretWorldTeleport.Size = UDim2.new(0, 88, 0, 36)
 SecretWorldTeleport.Font = Enum.Font.SourceSansSemibold
 SecretWorldTeleport.Text = "Secret World"
@@ -69,6 +67,7 @@ end)
 FutureTeleport.Name = "FutureTeleport"
 FutureTeleport.Parent = ScreenGui
 FutureTeleport.BackgroundColor3 = Color3.fromRGB(230, 39, 255)
+FutureTeleport.Position = UDim2.new(0.932081223, 0, 0.252006412, 0)
 FutureTeleport.Size = UDim2.new(0, 88, 0, 36)
 FutureTeleport.Font = Enum.Font.SourceSansSemibold
 FutureTeleport.Text = "Future"
@@ -85,6 +84,7 @@ end)
 HTCTeleport.Name = "HTCTeleport"
 HTCTeleport.Parent = ScreenGui
 HTCTeleport.BackgroundColor3 = Color3.fromRGB(143, 255, 252)
+HTCTeleport.Position = UDim2.new(0.932081223, 0, 0.714285672, 0)
 HTCTeleport.Size = UDim2.new(0, 88, 0, 36)
 HTCTeleport.Font = Enum.Font.SourceSansSemibold
 HTCTeleport.Text = "HTC"
@@ -101,6 +101,7 @@ end)
 ZarosTeleport.Name = "ZarosTeleport"
 ZarosTeleport.Parent = ScreenGui
 ZarosTeleport.BackgroundColor3 = Color3.fromRGB(234, 255, 129)
+ZarosTeleport.Position = UDim2.new(0.932081223, 0, 0.637239158, 0)
 ZarosTeleport.Size = UDim2.new(0, 88, 0, 36)
 ZarosTeleport.Font = Enum.Font.SourceSansSemibold
 ZarosTeleport.Text = "Zaros"
@@ -117,6 +118,7 @@ end)
 SpaceTeleport.Name = "SpaceTeleport"
 SpaceTeleport.Parent = ScreenGui
 SpaceTeleport.BackgroundColor3 = Color3.fromRGB(255, 11, 96)
+SpaceTeleport.Position = UDim2.new(0.932081223, 0, 0.325842679, 0)
 SpaceTeleport.Size = UDim2.new(0, 88, 0, 36)
 SpaceTeleport.Font = Enum.Font.SourceSansSemibold
 SpaceTeleport.Text = "Space"
@@ -133,6 +135,7 @@ end)
 OtherWorldTeleport.Name = "OtherWorldTeleport"
 OtherWorldTeleport.Parent = ScreenGui
 OtherWorldTeleport.BackgroundColor3 = Color3.fromRGB(144, 255, 224)
+OtherWorldTeleport.Position = UDim2.new(0.932081223, 0, 0.556982338, 0)
 OtherWorldTeleport.Size = UDim2.new(0, 88, 0, 36)
 OtherWorldTeleport.Font = Enum.Font.SourceSansSemibold
 OtherWorldTeleport.Text = "Other World"
@@ -149,6 +152,7 @@ end)
 EarthTeleport.Name = "EarthTeleport"
 EarthTeleport.Parent = ScreenGui
 EarthTeleport.BackgroundColor3 = Color3.fromRGB(255, 87, 90)
+EarthTeleport.Position = UDim2.new(0.932081223, 0, 0.404494375, 0)
 EarthTeleport.Size = UDim2.new(0, 88, 0, 36)
 EarthTeleport.Font = Enum.Font.SourceSansSemibold
 EarthTeleport.Text = "Earth"
