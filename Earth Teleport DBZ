@@ -1,4 +1,28 @@
 
+if not game:IsLoaded() then
+	local loadedcheck = Instance.new("Message",workspace)
+	loadedcheck.Text = 'Loading...'
+	game.Loaded:Wait()
+	loadedcheck:Destroy()
+end
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "SKY's EZ Teleport";
+        Text = "Thank You For Using This Script! Enjoy!";
+        })
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "For Bug Report: ITzNotSky#1428 ";
+	Text = "on Discord";
+})
+
+
+if NS2_LOADED and not _G.NS2_DEBUG == true then
+    error("The Script Is Already Runing!",0)
+    return
+end
+pcall(function() getgenv().NS2_LOADED  = true end)
+
 local ScreenGui = Instance.new("ScreenGui")
 local QueueTeleport = Instance.new("TextButton")
 local NamekTeleport = Instance.new("TextButton")
