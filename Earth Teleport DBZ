@@ -1,3 +1,4 @@
+
 local ScreenGui = Instance.new("ScreenGui")
 local QueueTeleport = Instance.new("TextButton")
 local NamekTeleport = Instance.new("TextButton")
@@ -22,6 +23,7 @@ QueueTeleport.Text = "Queue"
 QueueTeleport.TextColor3 = Color3.fromRGB(0, 0, 0)
 QueueTeleport.TextSize = 14.000
 QueueTeleport.TextWrapped = true
+QueueTeleport.Draggable = true
 QueueTeleport.MouseButton1Click:connect(function()
 game:GetService("TeleportService"):Teleport(3565304751)
 game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -39,6 +41,7 @@ NamekTeleport.Font = Enum.Font.SourceSansSemibold
 NamekTeleport.Text = "Namek"
 NamekTeleport.TextColor3 = Color3.fromRGB(0, 0, 0)
 NamekTeleport.TextSize = 14.000
+NamekTeleport.Draggable = true
 NamekTeleport.MouseButton1Click:connect(function()
 game:GetService("TeleportService"):Teleport(882399924)
 game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -56,6 +59,7 @@ SecretWorldTeleport.Font = Enum.Font.SourceSansSemibold
 SecretWorldTeleport.Text = "Secret World"
 SecretWorldTeleport.TextColor3 = Color3.fromRGB(0, 0, 0)
 SecretWorldTeleport.TextSize = 14.000
+SecretWorldTeleport.Draggable = true
 SecretWorldTeleport.MouseButton1Click:connect(function()
 game:GetService("TeleportService"):Teleport(2046990924)
 game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -73,6 +77,7 @@ FutureTeleport.Font = Enum.Font.SourceSansSemibold
 FutureTeleport.Text = "Future"
 FutureTeleport.TextColor3 = Color3.fromRGB(0, 0, 0)
 FutureTeleport.TextSize = 14.000
+FutureTeleport.Draggable = true
 FutureTeleport.MouseButton1Click:connect(function()
 game:GetService("TeleportService"):Teleport(569994010)
 game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -90,6 +95,7 @@ HTCTeleport.Font = Enum.Font.SourceSansSemibold
 HTCTeleport.Text = "HTC"
 HTCTeleport.TextColor3 = Color3.fromRGB(0, 0, 0)
 HTCTeleport.TextSize = 14.000
+HTCTeleport.Draggable = true
 HTCTeleport.MouseButton1Click:connect(function()
 game:GetService("TeleportService"):Teleport(882375367)
 game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -107,6 +113,7 @@ ZarosTeleport.Font = Enum.Font.SourceSansSemibold
 ZarosTeleport.Text = "Zaros"
 ZarosTeleport.TextColor3 = Color3.fromRGB(0, 0, 0)
 ZarosTeleport.TextSize = 14.000
+ZarosTeleport.Draggable = true
 ZarosTeleport.MouseButton1Click:connect(function()
 game:GetService("TeleportService"):Teleport(2651456105)
 game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -124,6 +131,7 @@ SpaceTeleport.Font = Enum.Font.SourceSansSemibold
 SpaceTeleport.Text = "Space"
 SpaceTeleport.TextColor3 = Color3.fromRGB(0, 0, 0)
 SpaceTeleport.TextSize = 14.000
+SpaceTeleport.Draggable = true
 SpaceTeleport.MouseButton1Click:connect(function()
 game:GetService("TeleportService"):Teleport(478132461)
 game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -141,6 +149,7 @@ OtherWorldTeleport.Font = Enum.Font.SourceSansSemibold
 OtherWorldTeleport.Text = "Other World"
 OtherWorldTeleport.TextColor3 = Color3.fromRGB(0, 0, 0)
 OtherWorldTeleport.TextSize = 14.000
+OtherWorldTeleport.Draggable = true
 OtherWorldTeleport.MouseButton1Click:connect(function()
 game:GetService("TeleportService"):Teleport(3552157537)
 game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -158,6 +167,7 @@ EarthTeleport.Font = Enum.Font.SourceSansSemibold
 EarthTeleport.Text = "Earth"
 EarthTeleport.TextColor3 = Color3.fromRGB(0, 0, 0)
 EarthTeleport.TextSize = 14.000
+EarthTeleport.Draggable = true
 EarthTeleport.MouseButton1Click:connect(function()
 game:GetService("TeleportService"):Teleport(536102540)
 game:GetService("StarterGui"):SetCore("SendNotification", {
