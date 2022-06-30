@@ -9,6 +9,7 @@ local ZarosTeleport = Instance.new("TextButton")
 local SpaceTeleport = Instance.new("TextButton")
 local OtherWorldTeleport = Instance.new("TextButton")
 local EarthTeleport = Instance.new("TextButton")
+local OpenClose = Instance.new("TextButton")
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -175,3 +176,47 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Text = "ITzNotSky#1428";
 })
 end)
+
+OpenClose.Name = "OpenClose"
+OpenClose.Parent = ScreenGui
+OpenClose.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+OpenClose.Position = UDim2.new(0.931234419, 0, 0.0609951802, 0)
+OpenClose.Size = UDim2.new(0, 77, 0, 45)
+OpenClose.Font = Enum.Font.Sarpanch
+OpenClose.Text = "OPEN/CLOSE"
+OpenClose.TextColor3 = Color3.fromRGB(0, 0, 0)
+OpenClose.TextSize = 14.000
+
+local function XYYI_fake_script() -- OpenClose.LocalScript 
+	local script = Instance.new('LocalScript', OpenClose)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.EarthTeleport.Visible = not script.Parent.Parent.EarthTeleport.Visible
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.SpaceTeleport.Visible = not script.Parent.Parent.SpaceTeleport.Visible
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.QueueTeleport.Visible = not script.Parent.Parent.QueueTeleport.Visible
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.ZarosTeleport.Visible = not script.Parent.Parent.ZarosTeleport.Visible
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.NamekTeleport.Visible = not script.Parent.Parent.NamekTeleport.Visible
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.OtherWorldTeleport.Visible = not script.Parent.Parent.OtherWorldTeleport.Visible
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.SecretWorldTeleport.Visible = not script.Parent.Parent.SecretWorldTeleport.Visible
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.HTCTeleport.Visible = not script.Parent.Parent.HTCTeleport.Visible
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.FutureTeleport.Visible = not script.Parent.Parent.FutureTeleport.Visible
+	end)
+	
+end
+coroutine.wrap(XYYI_fake_script)()
